@@ -9,7 +9,7 @@ nav .navBar{
     margin: auto;
     padding: 10px;
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 27.5% 72.5%;
     justify-items: end;
 }
 nav .navBar .logo{
