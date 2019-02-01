@@ -22,3 +22,29 @@
 .projectlist .projectCards .date{
     color: #747474;
 }
+.projectDetails{
+    width: 100%;
+    text-align: left;
+}
+.projectDetails .container{
+    width: 70%;
+    margin: 50px auto 0;
+}
+.projectDetails .container .projectTitle{
+    font-size: 35px;
+    color: #333;
+}
+.projectDetails .container .projectBody{
+    color: #494949;
+    font-size: 20px;
+}
+.projectDetails .container .projectOwder{
+    font-size: 18px;
+    font-weight: bold;
+    color: #adadad;
+}
+.projectDetails .container .date{
+    color: #adadad;
+    font-size: 17px;
+    font-weight: bold;
+}

@@ -1,23 +1,12 @@
 import React from "react"
+import ProjectSummery from "./ProjectSummery"
 import "./Project.css"
 const ProjectList = () => {
     return(
         <div className="projectlist">
-            <div className="projectCards">
-                <span className="projectTitle">Project Title</span>
-                <p className="projectOwder">Posted By Rakib</p>
-                <p className="date">1st February 2019</p> 
-            </div>
-            <div className="projectCards">
-                <span className="projectTitle">Project Title</span>
-                <p className="projectOwder">Posted By Rakib</p>
-                <p className="date">1st February 2019</p> 
-            </div>
-            <div className="projectCards">
-                <span className="projectTitle">Project Title</span>
-                <p className="projectOwder">Posted By Rakib</p>
-                <p className="date">1st February 2019</p> 
-            </div>
+            <ProjectSummery />
+            <ProjectSummery />
+            <ProjectSummery />
         </div>
     )
 }

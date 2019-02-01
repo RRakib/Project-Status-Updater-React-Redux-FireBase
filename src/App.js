@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {BrowserRouter , Switch , Route} from "react-router-dom"
 import Navbar from "./Components/Layout/Navbar"
 import Dashbord from "./Components/Dashbord/Dashbord"
+import ProjectDetails from "./Components/Projects/ProjectDetails"
 import './App.css';
 
 class App extends Component {
@@ -11,7 +12,8 @@ class App extends Component {
         <div className="App">
           <Navbar />
           <Switch>
-          <Route path="/" component={Dashbord} />
+          <Route path="/" exact component={Dashbord} />
+          <Route path="/project/:id" component={ProjectDetails} />
           </Switch>
         </div>
       </BrowserRouter>
