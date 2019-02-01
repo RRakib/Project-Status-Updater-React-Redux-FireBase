@@ -1,0 +1,35 @@
+nav{
+    background: #333;
+    color: #eee;
+    overflow: hidden;
+    width: 100%;
+}
+nav .navBar{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-items: end;
+}
+nav .navBar .logo{
+    color: #eee;
+    text-decoration: none;
+    font-size: 22px;
+}
+.signedIn{
+    width: 45%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.signedIn .signedInNav{
+    color: #eee;
+    text-decoration: none;
+    font-size: 18px;
+}
+.signedIn .signedInNav.user{
+    width: 80%;
+    height: 100%;
+    border-radius: 100px;
+    background: #7e2727;
+}
