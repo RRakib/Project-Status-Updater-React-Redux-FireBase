@@ -1,0 +1,33 @@
+.signIn{
+    width: 100%;
+    text-align: left;
+}
+.signIn .container{
+    width: 60%;
+    margin: 7% auto 0;
+}
+.signIn .container .title{
+    font-size: 40px;
+    margin: 0 0 20px;
+    padding: 0;
+    color: #444444;
+}
+.signIn .container .input{
+    width: 100%;
+    height: 50px;
+    margin: 0 0 15px;
+    border: none;
+    border-bottom: 2px solid #767676;
+    outline: none;
+    font-size: 17px;
+}
+.signIn .container button{
+    background: #7e2727;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    padding: 8px 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+}

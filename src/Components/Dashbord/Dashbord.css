@@ -3,7 +3,7 @@
     height: 100%;
 }
 .dashbord .container{
-    width: 90%;
+    width: 85%;
     margin: auto;
     display: grid;
     grid-template-columns: 60% 40%;
