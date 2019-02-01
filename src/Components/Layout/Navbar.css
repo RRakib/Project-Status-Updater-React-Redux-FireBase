@@ -26,6 +26,11 @@ nav .navBar .logo{
     color: #eee;
     text-decoration: none;
     font-size: 18px;
+    transition: .3s;
+}
+.signedIn .signedInNav:hover{
+    color: white;
+    transform: scale(1.04);
 }
 .signedIn .signedInNav.user{
     width: 80%;
