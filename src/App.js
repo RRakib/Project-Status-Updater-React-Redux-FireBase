@@ -5,6 +5,7 @@ import Dashbord from "./Components/Dashbord/Dashbord"
 import ProjectDetails from "./Components/Projects/ProjectDetails"
 import SignIn from "./Components/Auth/SignIn"
 import SignUp from "./Components/Auth/SignUp"
+import CreateProject from "./Components/Projects/CreateProject"
 import './App.css';
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
           <Route path="/project/:id" component={ProjectDetails} />
           <Route path="/signin" component={SignIn} />
           <Route path="/signup" component={SignUp} />
+          <Route path="/createproject" component={CreateProject} />
           </Switch>
         </div>
       </BrowserRouter>
