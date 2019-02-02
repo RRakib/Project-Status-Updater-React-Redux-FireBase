@@ -1,11 +1,12 @@
 import React from 'react'
 
-const ProjectSummery = () => {
+const ProjectSummery = (props) => {
+  const { content , title } = props;
   return (
     <div>
       <div className="projectCards">
-                <span className="projectTitle">Project Title</span>
-                <p className="projectOwder">Posted By Rakib</p>
+                <span className="projectTitle">{title}</span>
+                <p className="projectOwder">{content}</p>
                 <p className="date">1st February 2019</p> 
             </div>
     </div>

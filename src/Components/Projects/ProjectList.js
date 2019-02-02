@@ -1,12 +1,11 @@
 import React from "react"
 import ProjectSummery from "./ProjectSummery"
 import "./Project.css"
-const ProjectList = () => {
+const ProjectList = (props) => {
+    const { title , content} = props;
     return(
         <div className="projectlist">
-            <ProjectSummery />
-            <ProjectSummery />
-            <ProjectSummery />
+            <ProjectSummery title={title} content={content} />
         </div>
     )
 }
