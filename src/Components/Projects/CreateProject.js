@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { connect } from "react-redux";
+import { createProject } from "../../Store/Actions/projectAction"
 import "./Project.css"
 class CreateProject extends Component {
     state = {
@@ -14,7 +16,7 @@ class CreateProject extends Component {
      }
      handleSubmit = (e) => {
          e.preventDefault();
-        console.log(this.state)
+        this.props.createProject(this.state)
         this.setState({
             title : "",
             content : "",
@@ -22,6 +24,7 @@ class CreateProject extends Component {
      }
 
   render() {
+
     return (
       <div className="createProjects">
         <div className="container">
@@ -53,4 +56,16 @@ class CreateProject extends Component {
   }
 }
 
-export default CreateProject
+const mapStoreToProsp= (state) => {
+    return state
+}
+
+
+const mapDispatchToProps = (dispatch) => {
+    return{
+        createProject : (project) => dispatch(createProject(project))
+    }
+}
+
+
+export default connect(mapStoreToProsp , mapDispatchToProps)(CreateProject)
