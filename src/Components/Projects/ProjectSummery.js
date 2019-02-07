@@ -7,7 +7,7 @@ const ProjectSummery = (props) => {
       <div className="projectCards">
                 <span className="projectTitle">{title}</span>
                 <p className="projectOwder">{content}</p>
-                <p className="date">1st February 2019</p> 
+                <p className="date"></p> 
             </div>
     </div>
   )
