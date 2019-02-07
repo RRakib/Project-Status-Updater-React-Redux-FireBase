@@ -2,11 +2,14 @@ import React, { Component } from 'react'
 import Notifications from "./Notifications"
 import ProjectList from "../Projects/ProjectList"
 import { connect } from "react-redux"
+import { firestoreConnect } from "react-redux-firebase"
+import { compose } from "redux"
 import "./Dashbord.css"
 
 class Dashbord extends Component {
   render() {
     const {projects} = this.props;
+    console.log(projects)
     const projectList = projects.map(items => (
       <ProjectList 
         key={items.id} 
@@ -30,11 +33,24 @@ class Dashbord extends Component {
 }
 
 const grabData = (store) => {
-  return{
-    projects : store.project.project
+  if(store.firestore.ordered.projects)
+  { 
+    return{
+    projects : store.firestore.ordered.projects
   }
+  }
+  else{
+    return{
+      projects: store.project.project
+    }  
+  }
+
 }
 
 
-
-export default connect(grabData)(Dashbord)
+export default compose(
+  connect(grabData),
+  firestoreConnect([
+    { collection : "projects"}
+  ])
+  )(Dashbord)
